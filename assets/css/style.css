@@ -1,0 +1,105 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    grid-area: header;
+    background-color: #242424;
+    color: #f8f9fa;
+    text-align: center;
+    padding: 1px;
+}
+
+menu {
+    grid-area: menu;
+    background-color: #343a40;
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 10px;
+}
+
+main {
+    grid-area: main; 
+} 
+    
+footer {
+    grid-area: footer;
+    background-color: #242424;
+    color: #f8f9fa;
+}
+
+.grid-container { 
+    display: grid; 
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "header header" "menu main" "footer footer";
+    gap: 10px; 
+}
+
+.caract {
+    cursor: pointer;
+    gap: 4%;
+}
+
+.caract:hover {
+    color: #adb5bd;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(300px, auto);
+    gap: 10px;
+}
+.gallery img {
+    width: 100%;
+    height: auto; /* Ajusta esto para mantener las proporciones de la imagen */
+    max-height: 70%; /* Establece un límite máximo de altura para prevenir desbordamientos */
+}
+
+.gallery > div {
+    border: 1px solid #0b6759; 
+    max-width: 300px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.container button {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 2.5%;
+    font-size: large;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.container button:hover {
+    background-color: #28a745;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #0b6759;
+    margin: 15%;
+    text-decoration: none;
+    font-size: 30px;
+}
